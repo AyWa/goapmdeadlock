@@ -27,6 +27,6 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 	defer func() {
 		atomic.AddInt64(&EndReq, 1)
 	}()
-	time.Sleep(time.Second * 2)
-	fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
+	time.Sleep(time.Millisecond * 20)
+	fmt.Fprint(w, "Hello!")
 }
