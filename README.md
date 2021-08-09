@@ -1,3 +1,7 @@
+## fix
+
+it has been fixed in https://github.com/elastic/apm-agent-go/pull/997
+
 ## APM deadlock
 
 This is an example project to reproduce deadlock issue that we have on production.
